@@ -450,8 +450,8 @@ if "user_id" not in st.session_state:
                             st.rerun()
                         else:
                             st.error("Login session was not created.")
-                    except Exception:
-                        st.error("Login failed. Check your email and password.")
+                  except Exception as e:
+                        st.error(f"Registration failed: {e}")
 
         with register_tab:
             st.subheader("Create your account")
