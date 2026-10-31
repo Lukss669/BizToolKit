@@ -482,8 +482,8 @@ if "user_id" not in st.session_state:
                                 st.rerun()
                             else:
                                 st.success("Account created! Confirm your email, then log in.")
-                        except Exception:
-                            st.error("Registration failed. Check your details.")
+                        except Exception as e:
+                            st.error(f"Registration failed: {e}")
     st.stop()
 
 user_id = st.session_state.user_id
