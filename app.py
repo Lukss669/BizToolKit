@@ -387,8 +387,16 @@ def t(text):
 # CONNECTION
 # ---------------------------------------------------------
 load_dotenv()
-url = os.getenv("SUPABASE_URL")
-key = os.getenv("SUPABASE_KEY")
+
+SUPABASE_URL = st.secrets.get(
+    "SUPABASE_URL",
+    os.getenv("SUPABASE_URL")
+)
+
+SUPABASE_KEY = st.secrets.get(
+    "SUPABASE_KEY",
+    os.getenv("SUPABASE_KEY")
+)
 
 if not url or not key:
     st.error("Supabase credentials are missing. Check your .env file.")
