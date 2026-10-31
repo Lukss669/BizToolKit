@@ -406,8 +406,7 @@ if "supabase" not in st.session_state:
     try:
         st.session_state.supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
     except Exception as e:
-        st.error(f"Connection error: {e}")
-        st.stop()
+        st.error(f"Registration failed: {e}")
 
 supabase = st.session_state.supabase
 
