@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+            "name": "ქურთუკი",
+            "price": 60.0,
+            "cost": 30.0,
+            "quantity": 15
+        },
+        {
+            "name": "მაისური",
+            "price": 15.0,
+            "cost": 8.0,
+            "quantity": 12
+        },
+        {
+            "name": "ქუდი",
+            "price": 15.0,
+            "cost": 5.0,
+            "quantity": 10
+        },
+        {
+            "name": "ფეხსაცმელი",
+            "price": 50.0,
+            "cost": 25.0,
+            "quantity": 12
+        },
+        {
+            "name": "შარვალი",
+            "price": 70.0,
+            "cost": 30.0,
+            "quantity": 25
+        }
+    ],
+    "sales": [
+        {
+            "name": "მაისური",
+            "quantity": 1,
+            "total": 10.0,
+            "cost": 5.0
+        },
+        {
+            "name": "შარვალი",
+            "quantity": 1,
+            "total": 10.0,
+            "cost": 5.0
+        },
+        {
+            "name": "შარვალი",
+            "quantity": 7,
+            "total": 105.0,
+            "cost": 5.0
+        },
+        {
+            "name": "მაისური",
+            "quantity": 5,
+            "total": 75.0,
+            "cost": 8.0
+        },
+        {
+            "name": "ფეხსაცმელი",
+            "quantity": 5,
+            "total": 250.0,
+            "cost": 25.0
+        },
+        {
+            "name": "ფეხსაცმელი",
+            "quantity": 1,
+            "total": 50.0,
+            "cost": 25.0
+        },
+        {
+            "name": "მაისური",
+            "quantity": 3,
+            "total": 45.0,
+            "cost": 8.0
+        },
+        {
+            "name": "ფეხსაცმელი",
+            "quantity": 12,
+            "total": 600.0,
+            "cost": 25.0
+        }
+    ]
+}
