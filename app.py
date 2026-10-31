@@ -398,10 +398,6 @@ SUPABASE_KEY = st.secrets.get(
     os.getenv("SUPABASE_KEY")
 )
 
-if not url or not key:
-    st.error("Supabase credentials are missing. Check your .env file.")
-    st.stop()
-
 if "supabase" not in st.session_state:
     try:
         st.session_state.supabase = create_client(url, key)
