@@ -444,14 +444,16 @@ if "user_id" not in st.session_state:
                             "email": email.strip(),
                             "password": password
                         })
+
                         if response.session:
                             st.session_state.user_id = response.user.id
                             st.session_state.user_email = response.user.email
                             st.rerun()
                         else:
                             st.error("Login session was not created.")
-                  except Exception as e:
-                        st.error(f"Registration failed: {e}")
+
+                    except Exception as e:
+                        st.error(f"Login failed: {e}")
 
         with register_tab:
             st.subheader("Create your account")
